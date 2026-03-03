@@ -1,0 +1,21 @@
+Code Review
+
+Initial story
+- the objective of the given class is to determine the 
+	final price (with discounts) for a product that we sell
+- there are 4 different types of products each having different discounts
+- there is a bonus discount for 'old' clients to our 
+	store based on account age 
+	
+Stage 1
+- rename functions and variables to more significant names for the given story
+- replace magic numbers with static variables
+
+Stage 2
+- improve the solution by implementing enums for product types and discounts
+- replace the if-else-if cascade with a switch
+
+Stage 3
+- refactor the function complexity splitting it into more simple functions
+- folllow KISS
+- follow SRP from SOLID
