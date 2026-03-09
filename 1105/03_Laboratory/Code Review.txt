@@ -1,0 +1,15 @@
+Code Review
+
+Stage 1
+- use naming conventions and more proper names for the class, function and variables
+- remove magic numbers
+
+Stage 2
+- too many statics
+- the if-else-if.... can be replaced by a switch
+- use an enum for product type
+
+Stage 3
+ - remove repeating patterns (DRY) - use functions
+ - simplify the function (KISS) by splitting it into multiple ones 
+ 	which do 1 thing (SRP)
