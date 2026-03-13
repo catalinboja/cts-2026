@@ -1,0 +1,25 @@
+Code Review
+
+Initial Stage
+- use proper names for the class, function and variables
+- replace magic numbers using statics
+
+Stage 1
+- replace the if-else-if.... with a switch
+- use enums for product types
+- too many static variables
+- format the source code
+
+Stage 2
+- remove the discount computation repeating pattern for each product type
+- simplify the method by defining more simpler methods (KISS)
+- make more methods that do only 1 thing (SRP)
+
+Stage 3
+- remove dependencies on the current marketing strategy
+- follow DIP
+
+
+
+
+
