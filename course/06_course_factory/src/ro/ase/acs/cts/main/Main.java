@@ -11,24 +11,38 @@ import ro.ase.acs.cts.documents.DocumentWordText;
 public class Main {
 	public static void main(String[] args) {
 		
-		//tight coupling;
+		//the solution depends on all the details specific to 
+		//	different constructors/classes details
+		
+		//tight coupling - opposite of DIP
+		
+//		// create a html doc
 //		AbstractDocument htmlDoc = 
 //				new DocumentHtmlGeneric("index.html", true);
-//		AbstractDocument msWordDoc = 
-//				new DocumentWordText("course.docx", 12);
-//		AbstractDocument openOfficeDoc = 
-//				new DocumentOpenOfficeText("assignment.odl");
-//		
+//		// create a word doc
+//		AbstractDocument wordDoc = 
+//				new DocumentWordText("subject.docx", 22, false);
+//		AbstractDocument openOffice = 
+//				new DocumentOpenOfficeText("course.odt", true);
 		
-		//test the factory method solution
 		
-		DocFactory docFactory = new DocFactory();
-		AbstractDocument msWordDoc2 = 
-				docFactory.getDocument(DocType.WORD, "course.docx");
+		//loose coupling - DIP
+		AbstractDocument htmlDoc = DocSimpleFactory.getDocument(
+				DocType.HTML, "robots.txt");
+		AbstractDocument wordDoc = DocSimpleFactory.getDocument(
+				DocType.WORD, "content.docx");
+		AbstractDocument openOffice = DocSimpleFactory.getDocument(
+				DocType.OPEN_OFFICE, "subject.odt");
 		
-		//test the simple factory
-		AbstractDocument msWordDocCopy = 
-				DocSimpleFactory.getDocument(DocType.WORD, "course.docx");
 		
+		((DocumentHtmlGeneric)htmlDoc).setHeader();
+		
+		
+		AbstractDocument openOffice2 = 
+				new DocumentOpenOfficeText("course.odt", true, "");
 	}
 }
+
+
+
+

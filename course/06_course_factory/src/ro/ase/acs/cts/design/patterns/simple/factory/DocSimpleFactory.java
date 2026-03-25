@@ -23,7 +23,7 @@ public class DocSimpleFactory {
 			return new DocumentHtmlGeneric(docName, false);
 			
 		case OPEN_OFFICE:
-			return new DocumentOpenOfficeText(docName);
+			return new DocumentOpenOfficeText(docName, false, "");
 		default:
 			throw new UnsupportedOperationException();
 		}

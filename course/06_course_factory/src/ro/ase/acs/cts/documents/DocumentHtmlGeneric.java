@@ -18,5 +18,9 @@ public class DocumentHtmlGeneric extends AbstractDocument{
 	public void print(String text) {
 		System.out.println("<p>"+text+"</p>");
 	}
+	
+	public void setHeader() {
+		this.hasHeader = true;
+	}
 
 }
