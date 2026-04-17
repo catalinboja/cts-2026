@@ -1,0 +1,3 @@
+The game must integrate an external library containing Disney characters. These classes are incompatible with the interfaces already used by the internal ACME framework. Developers need a solution that allows the game to use external characters through the same interface as internal characters, without modifying the existing game logic.
+
+During the game, superheroes can be dynamically equipped with items and temporary effects that modify their behavior and attributes. Multiple enhancements may be active at the same time, and they may be added or removed during runtime. The solution must avoid creating separate classes for every possible combination of enhancements.
