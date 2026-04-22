@@ -8,8 +8,8 @@ public class ImageProxy implements ImageInterface {
 	private Image realImage = null;
 	private String file = null;
 
-	public ImageProxy(final String image) {
-		this.file = image;
+	public ImageProxy(final String imageFile) {
+		this.file = imageFile;
 	}
 
 	@Override

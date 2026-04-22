@@ -11,6 +11,7 @@ public class Main {
 				"root","player11234","1234player","1234"}; 
 		
 		LoginInterface proxylogin = new SecureLoginProxy(new LoginModule());
+		
 		int noAttempts = 0;
 		for(String parola : passwordsDictionary) {
 			noAttempts += 1;
